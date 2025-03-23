@@ -1,6 +1,5 @@
 const username = 'hetoreno';
 
-
   async function getRepos() {
     const response = await fetch(`https://api.github.com/users/${username}/repos`);
     
@@ -21,7 +20,5 @@ const username = 'hetoreno';
       repoList.appendChild(repoItem);
     });
   }
-  
-  
   
   getRepos();
